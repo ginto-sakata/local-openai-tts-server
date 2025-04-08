@@ -1,0 +1,248 @@
+# voices_definitions.yaml - Static definitions - DO NOT EDIT unless updating models/links
+silero:
+  engine_type: "silero"
+  repo_dir: "silero_repo_files"
+  repo_git_url: "https://github.com/snakers4/silero-models.git"
+  models:
+    ru_v4:
+      model_id: "v4_ru"
+      package_url: 'https://models.silero.ai/models/tts/ru/v4_ru.pt'
+      supported_sample_rates: [8000, 24000, 48000]
+      voices: { aidar: "Айдар (Silero RU)", baya: "Байя (Silero RU)", kseniya: "Ксения (Silero RU)", xenia: "Женя (Silero RU)", eugene: "Евгений (Silero RU)" }
+    en_v3:
+      model_id: "v3_en"
+      package_url: 'https://models.silero.ai/models/tts/en/v3_en.pt'
+      supported_sample_rates: [8000, 24000, 48000]
+      speakers_generic_pattern: "en_{id}"
+
+piper:
+  engine_type: "piper"
+  models_dir: "piper_models"
+  hf_repo_id: "rhasspy/piper-voices"
+  languages:
+    ar:
+      language_code: "ar"
+      voices:
+        kareem-low: { subpath_no_ext: "ar/ar_JO/kareem/low/ar_JO-kareem-low", name: "Kareem Low (Piper AR)" }
+        kareem-medium: { subpath_no_ext: "ar/ar_JO/kareem/medium/ar_JO-kareem-medium", name: "Kareem Medium (Piper AR)" }
+    ca:
+      language_code: "ca"
+      voices:
+        upc_ona-x_low: { subpath_no_ext: "ca/ca_ES/upc_ona/x_low/ca_ES-upc_ona-x_low", name: "Ona X-Low (Piper CA)" }
+        upc_ona-medium: { subpath_no_ext: "ca/ca_ES/upc_ona/medium/ca_ES-upc_ona-medium", name: "Ona Medium (Piper CA)" }
+        upc_pau-x_low: { subpath_no_ext: "ca/ca_ES/upc_pau/x_low/ca_ES-upc_pau-x_low", name: "Pau X-Low (Piper CA)" }
+    cs:
+      language_code: "cs"
+      voices:
+        jirka-low: { subpath_no_ext: "cs/cs_CZ/jirka/low/cs_CZ-jirka-low", name: "Jirka Low (Piper CS)" }
+        jirka-medium: { subpath_no_ext: "cs/cs_CZ/jirka/medium/cs_CZ-jirka-medium", name: "Jirka Medium (Piper CS)" }
+    cy:
+      language_code: "cy"
+      voices:
+        gwryw_gogleddol-medium: { subpath_no_ext: "cy/cy_GB/gwryw_gogleddol/medium/cy_GB-gwryw_gogleddol-medium", name: "Gwryw Gogleddol (Piper CY)" }
+    da:
+      language_code: "da"
+      voices:
+        talesyntese-medium: { subpath_no_ext: "da/da_DK/talesyntese/medium/da_DK-talesyntese-medium", name: "Talesyntese (Piper DA)" }
+    de:
+      language_code: "de"
+      voices:
+        eva_k-x_low: { subpath_no_ext: "de/de_DE/eva_k/x_low/de_DE-eva_k-x_low", name: "Eva K X-Low (Piper DE)" }
+        karlsson-low: { subpath_no_ext: "de/de_DE/karlsson/low/de_DE-karlsson-low", name: "Karlsson Low (Piper DE)" }
+        kerstin-low: { subpath_no_ext: "de/de_DE/kerstin/low/de_DE-kerstin-low", name: "Kerstin Low (Piper DE)" }
+        mls-medium: { subpath_no_ext: "de/de_DE/mls/medium/de_DE-mls-medium", name: "MLS Medium (Piper DE)" }
+        pavoque-low: { subpath_no_ext: "de/de_DE/pavoque/low/de_DE-pavoque-low", name: "Pavoque Low (Piper DE)" }
+        ramona-low: { subpath_no_ext: "de/de_DE/ramona/low/de_DE-ramona-low", name: "Ramona Low (Piper DE)" }
+        thorsten-low: { subpath_no_ext: "de/de_DE/thorsten/low/de_DE-thorsten-low", name: "Thorsten Low (Piper DE)" }
+        thorsten-medium: { subpath_no_ext: "de/de_DE/thorsten/medium/de_DE-thorsten-medium", name: "Thorsten Medium (Piper DE)" }
+        thorsten-high: { subpath_no_ext: "de/de_DE/thorsten/high/de_DE-thorsten-high", name: "Thorsten High (Piper DE)" }
+        thorsten_emotional-medium: { subpath_no_ext: "de/de_DE/thorsten_emotional/medium/de_DE-thorsten_emotional-medium", name: "Thorsten Emotional (Piper DE)" }
+    el:
+      language_code: "el"
+      voices:
+        rapunzelina-low: { subpath_no_ext: "el/el_GR/rapunzelina/low/el_GR-rapunzelina-low", name: "Rapunzelina Low (Piper EL)" }
+    en:
+      language_code: "en"
+      voices:
+        alan-low: { subpath_no_ext: "en/en_GB/alan/low/en_GB-alan-low", name: "Alan Low (Piper GB)" }
+        alan-medium: { subpath_no_ext: "en/en_GB/alan/medium/en_GB-alan-medium", name: "Alan Medium (Piper GB)" }
+        alba-medium: { subpath_no_ext: "en/en_GB/alba/medium/en_GB-alba-medium", name: "Alba Medium (Piper GB)" }
+        aru-medium: { subpath_no_ext: "en/en_GB/aru/medium/en_GB-aru-medium", name: "Aru Medium (Piper GB)" }
+        cori-medium: { subpath_no_ext: "en/en_GB/cori/medium/en_GB-cori-medium", name: "Cori Medium (Piper GB)" }
+        cori-high: { subpath_no_ext: "en/en_GB/cori/high/en_GB-cori-high", name: "Cori High (Piper GB)" }
+        jenny_dioco-medium: { subpath_no_ext: "en/en_GB/jenny_dioco/medium/en_GB-jenny_dioco-medium", name: "Jenny Dioco (Piper GB)" }
+        northern_english_male-medium: { subpath_no_ext: "en/en_GB/northern_english_male/medium/en_GB-northern_english_male-medium", name: "Northern Male (Piper GB)" }
+        semaine-medium: { subpath_no_ext: "en/en_GB/semaine/medium/en_GB-semaine-medium", name: "Semaine (Piper GB)" }
+        southern_english_female-low: { subpath_no_ext: "en/en_GB/southern_english_female/low/en_GB-southern_english_female-low", name: "Southern Female Low (Piper GB)" }
+        vctk-medium: { subpath_no_ext: "en/en_GB/vctk/medium/en_GB-vctk-medium", name: "VCTK Medium (Piper GB)" }
+        amy-low: { subpath_no_ext: "en/en_US/amy/low/en_US-amy-low", name: "Amy Low (Piper US)" }
+        amy-medium: { subpath_no_ext: "en/en_US/amy/medium/en_US-amy-medium", name: "Amy Medium (Piper US)" }
+        arctic-medium: { subpath_no_ext: "en/en_US/arctic/medium/en_US-arctic-medium", name: "Arctic Medium (Piper US)" }
+        bryce-medium: { subpath_no_ext: "en/en_US/bryce/medium/en_US-bryce-medium", name: "Bryce Medium (Piper US)" }
+        danny-low: { subpath_no_ext: "en/en_US/danny/low/en_US-danny-low", name: "Danny Low (Piper US)" }
+        hfc_female-medium: { subpath_no_ext: "en/en_US/hfc_female/medium/en_US-hfc_female-medium", name: "HFC Female (Piper US)" }
+        hfc_male-medium: { subpath_no_ext: "en/en_US/hfc_male/medium/en_US-hfc_male-medium", name: "HFC Male (Piper US)" }
+        joe-medium: { subpath_no_ext: "en/en_US/joe/medium/en_US-joe-medium", name: "Joe Medium (Piper US)" }
+        john-medium: { subpath_no_ext: "en/en_US/john/medium/en_US-john-medium", name: "John Medium (Piper US)" }
+        kathleen-low: { subpath_no_ext: "en/en_US/kathleen/low/en_US-kathleen-low", name: "Kathleen Low (Piper US)" }
+        kristin-medium: { subpath_no_ext: "en/en_US/kristin/medium/en_US-kristin-medium", name: "Kristin Medium (Piper US)" }
+        kusal-medium: { subpath_no_ext: "en/en_US/kusal/medium/en_US-kusal-medium", name: "Kusal Medium (Piper US)" }
+        l2arctic-medium: { subpath_no_ext: "en/en_US/l2arctic/medium/en_US-l2arctic-medium", name: "L2 Arctic (Piper US)" }
+        lessac-low: { subpath_no_ext: "en/en_US/lessac/low/en_US-lessac-low", name: "Lessac Low (Piper US)" }
+        lessac-medium: { subpath_no_ext: "en/en_US/lessac/medium/en_US-lessac-medium", name: "Lessac Medium (Piper US)" }
+        lessac-high: { subpath_no_ext: "en/en_US/lessac/high/en_US-lessac-high", name: "Lessac High (Piper US)" }
+        libritts-high: { subpath_no_ext: "en/en_US/libritts/high/en_US-libritts-high", name: "LibriTTS High (Piper US)" }
+        libritts_r-medium: { subpath_no_ext: "en/en_US/libritts_r/medium/en_US-libritts_r-medium", name: "LibriTTS-R Medium (Piper US)" }
+        ljspeech-medium: { subpath_no_ext: "en/en_US/ljspeech/medium/en_US-ljspeech-medium", name: "LJSpeech Medium (Piper US)" }
+        ljspeech-high: { subpath_no_ext: "en/en_US/ljspeech/high/en_US-ljspeech-high", name: "LJSpeech High (Piper US)" }
+        norman-medium: { subpath_no_ext: "en/en_US/norman/medium/en_US-norman-medium", name: "Norman Medium (Piper US)" }
+        ryan-low: { subpath_no_ext: "en/en_US/ryan/low/en_US-ryan-low", name: "Ryan Low (Piper US)" }
+        ryan-medium: { subpath_no_ext: "en/en_US/ryan/medium/en_US-ryan-medium", name: "Ryan Medium (Piper US)" }
+        ryan-high: { subpath_no_ext: "en/en_US/ryan/high/en_US-ryan-high", name: "Ryan High (Piper US)" }
+    es:
+      language_code: "es"
+      voices:
+        carlfm-x_low: { subpath_no_ext: "es/es_ES/carlfm/x_low/es_ES-carlfm-x_low", name: "CarlFM X-Low (Piper ES)" }
+        davefx-medium: { subpath_no_ext: "es/es_ES/davefx/medium/es_ES-davefx-medium", name: "DaveFX Medium (Piper ES)" }
+        mls_10246-low: { subpath_no_ext: "es/es_ES/mls_10246/low/es_ES-mls_10246-low", name: "MLS 10246 Low (Piper ES)" }
+        mls_9972-low: { subpath_no_ext: "es/es_ES/mls_9972/low/es_ES-mls_9972-low", name: "MLS 9972 Low (Piper ES)" }
+        sharvard-medium: { subpath_no_ext: "es/es_ES/sharvard/medium/es_ES-sharvard-medium", name: "Sharvard Medium (Piper ES)" }
+        ald-medium: { subpath_no_ext: "es/es_MX/ald/medium/es_MX-ald-medium", name: "Ald Medium (Piper MX)" }
+        claude-high: { subpath_no_ext: "es/es_MX/claude/high/es_MX-claude-high", name: "Claude High (Piper MX)" }
+    fa:
+      language_code: "fa"
+      voices:
+        amir-medium: { subpath_no_ext: "fa/fa_IR/amir/medium/fa_IR-amir-medium", name: "Amir Medium (Piper FA)" }
+        gyro-medium: { subpath_no_ext: "fa/fa_IR/gyro/medium/fa_IR-gyro-medium", name: "Gyro Medium (Piper FA)" }
+    fi:
+      language_code: "fi"
+      voices:
+        harri-low: { subpath_no_ext: "fi/fi_FI/harri/low/fi_FI-harri-low", name: "Harri Low (Piper FI)" }
+        harri-medium: { subpath_no_ext: "fi/fi_FI/harri/medium/fi_FI-harri-medium", name: "Harri Medium (Piper FI)" }
+    fr:
+      language_code: "fr"
+      voices:
+        gilles-low: { subpath_no_ext: "fr/fr_FR/gilles/low/fr_FR-gilles-low", name: "Gilles Low (Piper FR)" }
+        mls-medium: { subpath_no_ext: "fr/fr_FR/mls/medium/fr_FR-mls-medium", name: "MLS Medium (Piper FR)" }
+        mls_1840-low: { subpath_no_ext: "fr/fr_FR/mls_1840/low/fr_FR-mls_1840-low", name: "MLS 1840 Low (Piper FR)" }
+        siwis-low: { subpath_no_ext: "fr/fr_FR/siwis/low/fr_FR-siwis-low", name: "Siwis Low (Piper FR)" }
+        siwis-medium: { subpath_no_ext: "fr/fr_FR/siwis/medium/fr_FR-siwis-medium", name: "Siwis Medium (Piper FR)" }
+        tom-medium: { subpath_no_ext: "fr/fr_FR/tom/medium/fr_FR-tom-medium", name: "Tom Medium (Piper FR)" }
+        upmc-medium: { subpath_no_ext: "fr/fr_FR/upmc/medium/fr_FR-upmc-medium", name: "UPMC Medium (Piper FR)" }
+    hu:
+      language_code: "hu"
+      voices:
+        anna-medium: { subpath_no_ext: "hu/hu_HU/anna/medium/hu_HU-anna-medium", name: "Anna Medium (Piper HU)" }
+        berta-medium: { subpath_no_ext: "hu/hu_HU/berta/medium/hu_HU-berta-medium", name: "Berta Medium (Piper HU)" }
+        imre-medium: { subpath_no_ext: "hu/hu_HU/imre/medium/hu_HU-imre-medium", name: "Imre Medium (Piper HU)" }
+    is:
+      language_code: "is"
+      voices:
+        bui-medium: { subpath_no_ext: "is/is_IS/bui/medium/is_IS-bui-medium", name: "Bui Medium (Piper IS)" }
+        salka-medium: { subpath_no_ext: "is/is_IS/salka/medium/is_IS-salka-medium", name: "Salka Medium (Piper IS)" }
+        steinn-medium: { subpath_no_ext: "is/is_IS/steinn/medium/is_IS-steinn-medium", name: "Steinn Medium (Piper IS)" }
+        ugla-medium: { subpath_no_ext: "is/is_IS/ugla/medium/is_IS-ugla-medium", name: "Ugla Medium (Piper IS)" }
+    it:
+      language_code: "it"
+      voices:
+        paola-medium: { subpath_no_ext: "it/it_IT/paola/medium/it_IT-paola-medium", name: "Paola Medium (Piper IT)" }
+        riccardo-x_low: { subpath_no_ext: "it/it_IT/riccardo/x_low/it_IT-riccardo-x_low", name: "Riccardo X-Low (Piper IT)" }
+    ka:
+      language_code: "ka"
+      voices:
+        natia-medium: { subpath_no_ext: "ka/ka_GE/natia/medium/ka_GE-natia-medium", name: "Natia Medium (Piper KA)" }
+    kk:
+      language_code: "kk"
+      voices:
+        iseke-x_low: { subpath_no_ext: "kk/kk_KZ/iseke/x_low/kk_KZ-iseke-x_low", name: "Iseke X-Low (Piper KK)" }
+        issai-high: { subpath_no_ext: "kk/kk_KZ/issai/high/kk_KZ-issai-high", name: "Issai High (Piper KK)" }
+        raya-x_low: { subpath_no_ext: "kk/kk_KZ/raya/x_low/kk_KZ-raya-x_low", name: "Raya X-Low (Piper KK)" }
+    lb:
+      language_code: "lb"
+      voices:
+        marylux-medium: { subpath_no_ext: "lb/lb_LU/marylux/medium/lb_LU-marylux-medium", name: "Marylux Medium (Piper LB)" }
+    ne:
+      language_code: "ne"
+      voices:
+        google-x_low: { subpath_no_ext: "ne/ne_NP/google/x_low/ne_NP-google-x_low", name: "Google X-Low (Piper NE)" }
+        google-medium: { subpath_no_ext: "ne/ne_NP/google/medium/ne_NP-google-medium", name: "Google Medium (Piper NE)" }
+    nl:
+      language_code: "nl"
+      voices:
+        nathalie-x_low: { subpath_no_ext: "nl/nl_BE/nathalie/x_low/nl_BE-nathalie-x_low", name: "Nathalie X-Low (Piper BE)" }
+        nathalie-medium: { subpath_no_ext: "nl/nl_BE/nathalie/medium/nl_BE-nathalie-medium", name: "Nathalie Medium (Piper BE)" }
+        rdh-x_low: { subpath_no_ext: "nl/nl_BE/rdh/x_low/nl_BE-rdh-x_low", name: "RDH X-Low (Piper BE)" }
+        rdh-medium: { subpath_no_ext: "nl/nl_BE/rdh/medium/nl_BE-rdh-medium", name: "RDH Medium (Piper BE)" }
+        mls-medium: { subpath_no_ext: "nl/nl_NL/mls/medium/nl_NL-mls-medium", name: "MLS Medium (Piper NL)" }
+        mls_5809-low: { subpath_no_ext: "nl/nl_NL/mls_5809/low/nl_NL-mls_5809-low", name: "MLS 5809 Low (Piper NL)" }
+        mls_7432-low: { subpath_no_ext: "nl/nl_NL/mls_7432/low/nl_NL-mls_7432-low", name: "MLS 7432 Low (Piper NL)" }
+    no:
+      language_code: "no"
+      voices:
+        talesyntese-medium: { subpath_no_ext: "no/no_NO/talesyntese/medium/no_NO-talesyntese-medium", name: "Talesyntese Medium (Piper NO)" }
+    pl:
+      language_code: "pl"
+      voices:
+        darkman-medium: { subpath_no_ext: "pl/pl_PL/darkman/medium/pl_PL-darkman-medium", name: "Darkman Medium (Piper PL)" }
+        gosia-medium: { subpath_no_ext: "pl/pl_PL/gosia/medium/pl_PL-gosia-medium", name: "Gosia Medium (Piper PL)" }
+        mc_speech-medium: { subpath_no_ext: "pl/pl_PL/mc_speech/medium/pl_PL-mc_speech-medium", name: "MC Speech Medium (Piper PL)" }
+        mls_6892-low: { subpath_no_ext: "pl/pl_PL/mls_6892/low/pl_PL-mls_6892-low", name: "MLS 6892 Low (Piper PL)" }
+    pt:
+      language_code: "pt"
+      voices:
+        edresson-low: { subpath_no_ext: "pt/pt_BR/edresson/low/pt_BR-edresson-low", name: "Edresson Low (Piper BR)" }
+        faber-medium: { subpath_no_ext: "pt/pt_BR/faber/medium/pt_BR-faber-medium", name: "Faber Medium (Piper BR)" }
+        tugão-medium: { subpath_no_ext: "pt/pt_PT/tugão/medium/pt_PT-tugão-medium", name: "Tugão Medium (Piper PT)" }
+    ro:
+      language_code: "ro"
+      voices:
+        mihai-medium: { subpath_no_ext: "ro/ro_RO/mihai/medium/ro_RO-mihai-medium", name: "Mihai Medium (Piper RO)" }
+    ru:
+      language_code: "ru"
+      voices:
+        irina: { subpath_no_ext: "ru/ru_RU/irina/medium/ru_RU-irina-medium", name: "Ирина (Piper RU)" }
+        denis: { subpath_no_ext: "ru/ru_RU/denis/medium/ru_RU-denis-medium", name: "Денис (Piper RU)" }
+        dmitri: { subpath_no_ext: "ru/ru_RU/dmitri/medium/ru_RU-dmitri-medium", name: "Дмитрий (Piper RU)" }
+        ruslan: { subpath_no_ext: "ru/ru_RU/ruslan/medium/ru_RU-ruslan-medium", name: "Руслан (Piper RU)" }
+    sk:
+      language_code: "sk"
+      voices:
+        lili-medium: { subpath_no_ext: "sk/sk_SK/lili/medium/sk_SK-lili-medium", name: "Lili Medium (Piper SK)" }
+    sl:
+      language_code: "sl"
+      voices:
+        artur-medium: { subpath_no_ext: "sl/sl_SI/artur/medium/sl_SI-artur-medium", name: "Artur Medium (Piper SL)" }
+    sr:
+      language_code: "sr"
+      voices:
+        serbski_institut-medium: { subpath_no_ext: "sr/sr_RS/serbski_institut/medium/sr_RS-serbski_institut-medium", name: "Serbski Institut (Piper SR)" }
+    sv:
+      language_code: "sv"
+      voices:
+        nst-medium: { subpath_no_ext: "sv/sv_SE/nst/medium/sv_SE-nst-medium", name: "NST Medium (Piper SV)" }
+    sw:
+      language_code: "sw"
+      voices:
+        lanfrica-medium: { subpath_no_ext: "sw/sw_CD/lanfrica/medium/sw_CD-lanfrica-medium", name: "Lanfrica Medium (Piper SW)" }
+    tr:
+      language_code: "tr"
+      voices:
+        dfki-medium: { subpath_no_ext: "tr/tr_TR/dfki/medium/tr_TR-dfki-medium", name: "DFKI Medium (Piper TR)" }
+        fahrettin-medium: { subpath_no_ext: "tr/tr_TR/fahrettin/medium/tr_TR-fahrettin-medium", name: "Fahrettin Medium (Piper TR)" }
+        fettah-medium: { subpath_no_ext: "tr/tr_TR/fettah/medium/tr_TR-fettah-medium", name: "Fettah Medium (Piper TR)" }
+    uk:
+      language_code: "uk"
+      voices:
+        lada-x_low: { subpath_no_ext: "uk/uk_UA/lada/x_low/uk_UA-lada-x_low", name: "Lada X-Low (Piper UK)" }
+        ukrainian_tts-medium: { subpath_no_ext: "uk/uk_UA/ukrainian_tts/medium/uk_UA-ukrainian_tts-medium", name: "Ukrainian TTS Medium (Piper UK)" }
+    vi:
+      language_code: "vi"
+      voices:
+        '25hours_single-low': { subpath_no_ext: "vi/vi_VN/25hours_single/low/vi_VN-25hours_single-low", name: "25Hours Single Low (Piper VI)" }
+        vais1000-medium: { subpath_no_ext: "vi/vi_VN/vais1000/medium/vi_VN-vais1000-medium", name: "VAIS 1000 Medium (Piper VI)" }
+        vivos-x_low: { subpath_no_ext: "vi/vi_VN/vivos/x_low/vi_VN-vivos-x_low", name: "VIVOS X-Low (Piper VI)" }
+    zh:
+      language_code: "zh"
+      voices:
+        huayan-x_low: { subpath_no_ext: "zh/zh_CN/huayan/x_low/zh_CN-huayan-x_low", name: "Huayan X-Low (Piper ZH)" }
+        huayan-medium: { subpath_no_ext: "zh/zh_CN/huayan/medium/zh_CN-huayan-medium", name: "Huayan Medium (Piper ZH)" }

@@ -1,0 +1,28 @@
+# Local configuration - should not be committed
+config.env
+
+# Downloaded models and helper files
+silero_repo_files/
+piper_models/
+silero_repo_files_temp_clone/
+
+# Python virtual environment (if using venv)
+venv/
+*/venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
