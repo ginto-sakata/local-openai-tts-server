@@ -113,8 +113,8 @@ Edit `config.env` to control:
     4.  Check logs: `sudo journalctl -u local-tts.service -f`
 
 *   **🐸 Open WebUI:**
-    1.  Go to Open WebUI Settings -> Connections -> Audio.
-    2.  Enable OpenAI API TTS.
+    1.  Go to Open WebUI Settings -> Audio.
+    2.  Enable Text-to-Speech Engine: OpenAI
     3.  API Key: `any_text`
     4.  Base URL: `http://<your_server_ip>:5003` (Use your server's actual IP).
     5.  Save. Select voices in chat!
